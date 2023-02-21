@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Docker Compose Sample App</title>
+  </head>
+  <body>
+    <h1>Docker Compose Sample App</h1>
+    <form method="post">
+      <label for="content">Content:</label>
+      <input type="text" name="content" id="content">
+      <button type="submit">Submit</button>
+    </form>
+    <h2>Messages:</h2>
+    <ul>
+      {% for message in messages %}
+      <li>{{ message.content }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
